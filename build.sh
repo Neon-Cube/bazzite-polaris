@@ -4,4 +4,5 @@ set -ouex pipefail
 
 RELEASE="$(rpm -E %fedora)"
 
-rpm-ostree override replace https://koji.fedoraproject.org/koji/buildinfo?buildID=2407683 # gamescope 3.14.2-1.fc40
+rpm-ostree override remove gamescope
+rpm-ostree install https://koji.fedoraproject.org/koji/buildinfo?buildID=2407683 # gamescope 3.14.2-1.fc40
