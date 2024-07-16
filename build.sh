@@ -8,4 +8,5 @@ rpm-ostree override remove gamescope gamescope-libs gamescope-shaders gamescope-
 
 rpm-ostree install https://koji.fedoraproject.org/koji/buildinfo?buildID=2407683 # gamescope 3.14.2-1.fc40
 
+dnf copr enable kylegospo/bazzite
 rpm-ostree install gamescope-session-plus gamescope-session-steam # Hacky solution to avoid forking
