@@ -1,4 +1,4 @@
-## Warning: This project is **NOT** ready for use, do **NOT** use this until further notice!
+## This repository has been archived for historical purposes; since @kylegospo has kindly fixed the issue. If you still have any problems, try installing a fresh image from [https://bazzite.gg](https://bazzite.gg/).
 
 # bazzite-polaris
 
