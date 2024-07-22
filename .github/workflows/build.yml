@@ -43,7 +43,7 @@ jobs:
           # Generate a timestamp for creating an image version history
           TIMESTAMP="$(date +%Y%m%d)"
           COMMIT_TAGS=()
-          BUILD_TAGS=()
+          BUILD_TAGS=("testing" "gamescope-rollback")
 
           # Have tags for tracking builds during pull request
           SHA_SHORT="${GITHUB_SHA::7}"
@@ -56,7 +56,7 @@ jobs:
           done
 
           BUILD_TAGS+=("${TIMESTAMP}")
-          BUILD_TAGS+=("latest")
+          # BUILD_TAGS+=("latest")
 
           if [[ "${{ github.event_name }}" == "pull_request" ]]; then
               echo "Generated the following commit tags: "
